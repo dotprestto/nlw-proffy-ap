@@ -15,7 +15,7 @@ const Select: React.FC<SelectProps> = (props) => {
     return (
         <div className="select-block">
             <label htmlFor={props.name}>{ props.label }</label>
-            <select defaultValue="" id={props.name} {...props}>
+            <select value="" id={props.name} {...props}>
                 {/* deepcode ignore ReactDeprecatedElementProp: <please specify a reason of ignoring this> */}
                 <option value="" disabled hidden>Selecione uma opção</option>
 
