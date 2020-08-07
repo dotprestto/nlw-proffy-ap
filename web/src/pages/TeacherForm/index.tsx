@@ -1,4 +1,6 @@
 import React, { useState, FormEvent } from 'react'
+import { useHistory } from 'react-router-dom'
+
 import PageHeader from '../../components/PageHeader'
 import Input from '../../components/Input'
 import Textarea from '../../components/Textarea'
@@ -7,6 +9,7 @@ import Select from '../../components/Select'
 import warningIcon from '../../assets/images/icons/warning.svg'
 
 import './styles.css'
+import api from '../../services/api'
 
 interface ScheduleItem {
     week_day: number
@@ -22,6 +25,8 @@ function TeacherForm() {
 
     const [subject, setSubject] = useState('')
     const [cost, setCost] = useState('')
+
+    const history = useHistory()
 
     const [scheduleItems, setScheduleItem] = useState([{
         week_day: 0,
@@ -48,6 +53,20 @@ function TeacherForm() {
 
     function handleCreateClass(e: FormEvent) {
         e.preventDefault()
+        api.post('classes', {
+            name,
+            avatar,
+            whatsapp,
+            bio,
+            subject,
+            cost: Number(cost),
+            schedule: scheduleItems
+        }).then(() => {
+            alert('cadastro realizado com sucesso!')
+            history.push('/')
+        }).catch(()=> {
+            alert('Erro no cadastro!')
+        })
     }
 
     return (
