@@ -12,7 +12,7 @@ export default class ClassesController {
         const filters = req.query
         if(!filters.week_day || !filters.subject || !filters.time)
             return res.status(400).json({
-                error: "Missing filters to search classes."
+                error: 'Missing filters to search classes.'
             })
 
         const timeInMinutes = convertHourToMinutes(filters.time as string)
@@ -79,7 +79,7 @@ export default class ClassesController {
              return res.status(201).end()
          } catch (error) {
              return res.status(400).json({
-                 error: "Unexpected error while creating classes",
+                 error: 'Unexpected error while creating classes',
                  stack: error.stack
              })
          }

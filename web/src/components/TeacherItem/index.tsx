@@ -27,7 +27,7 @@ const TeacherItem: React.FC<TeacherItemProps> = ({teacher}) => {
     }
     
     return (
-        <article className="teacher-item">
+        <article className='teacher-item'>
             <header>
                 <img src={teacher.avatar} alt={teacher.name}/>
                 <div>
@@ -45,8 +45,8 @@ const TeacherItem: React.FC<TeacherItemProps> = ({teacher}) => {
                     Preço/hora
                     <strong>R$ {teacher.cost}</strong>
                 </p>
-                <a target="_blank" onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`} >
-                    <img src={whatsappIcon} alt="Entrar em contato"/>
+                <a target='_blank' onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`} >
+                    <img src={whatsappIcon} alt='Entrar em contato'/>
                     Entrar em contato
                 </a>
             </footer>

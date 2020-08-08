@@ -27,12 +27,12 @@ function TeacherList() {
     }
 
     return (
-        <div id="page-teacher-list" className="container">
-            <PageHeader title="Estes são os proffys disponíveis.">
-                <form id="search-teachers" onSubmit={searchTeachers}>
+        <div id='page-teacher-list' className='container'>
+            <PageHeader title='Estes são os proffys disponíveis.'>
+                <form id='search-teachers' onSubmit={searchTeachers}>
                     <Select 
-                        name="subject" 
-                        label="Matéria" 
+                        name='subject' 
+                        label='Matéria' 
                         value={subject}
                         onChange={(e) => {setSubject(e.target.value)}}
                         options={[
@@ -48,8 +48,8 @@ function TeacherList() {
                         ]}
                     />
                     <Select 
-                        name="week_day" 
-                        label="Dia da semana" 
+                        name='week_day' 
+                        label='Dia da semana' 
                         value={week_day}
                         onChange={(e) => {setWeekDay(e.target.value)}}
                         options={[
@@ -64,14 +64,14 @@ function TeacherList() {
                     />
 
                     <Input 
-                        type="time" 
-                        name="time" 
-                        label="Hora"
+                        type='time' 
+                        name='time' 
+                        label='Hora'
                         value={time}
                         onChange={(e) => {setTime(e.target.value)}}
                         
                     />
-                    <button type="submit">
+                    <button type='submit'>
                         Buscar
                     </button>
                 </form>
