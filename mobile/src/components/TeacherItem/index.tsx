@@ -13,13 +13,12 @@ function TeacherItem() {
         <View style={styles.container}>
             <View style={styles.profile}>
                 <Image style={styles.avatar} source={{
-                    uri: 'github.com/dotprestto.png'
+                    uri: 'https://github.com/dotprestto.png'
                 }}/>
 
                 <View style={styles.profileInfo}>
                     <Text style={styles.name}>Allan Presotto</Text>
                     <Text style={styles.subject}>Física</Text>
-
                 </View>
             </View>
 
@@ -32,8 +31,10 @@ function TeacherItem() {
                 </Text> 
 
                 <View style={styles.buttonsContainer}>
-                    <RectButton style={styles.favoriteButton}>
-                        <Image source={heartOutlineIcon}/>
+                    <RectButton style={[styles.favoriteButton, styles.favorited]}>
+                        {/* <Image source={heartOutlineIcon}/> */}
+                        <Image source={unfavoriteIcon}/>
+
                     </RectButton>    
 
                     <RectButton style={styles.contactButton}>
