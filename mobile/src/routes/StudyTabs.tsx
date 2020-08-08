@@ -21,8 +21,8 @@ function StudyTabs() {
                 },
                 tabStyle: {
                     flexDirection: 'row',
-                    alignItems: "center",
-                    justifyContent: "center",
+                    alignItems: 'center',
+                    justifyContent: 'center',
                     paddingBottom: Platform.OS === 'ios' ? 20 : 0,
                 },
                 iconStyle: {
@@ -42,25 +42,25 @@ function StudyTabs() {
             }}
         >
             <Screen 
-                name="TeacherList" 
+                name='TeacherList' 
                 component={TeacherList}
                 options={{
                     tabBarLabel: 'Proffys',
                     tabBarIcon: ({ color, size, focused }) => {
                         return (
-                            <Ionicons name="ios-easel" size={size} color={focused ? '#8257E5' : color}/>
+                            <Ionicons name='ios-easel' size={size} color={focused ? '#8257E5' : color}/>
                         )
                     }
                 }} 
             />
             <Screen 
-                name="Favorites" 
+                name='Favorites' 
                 component={Favorites} 
                 options={{
                     tabBarLabel: 'Favoritos',
                     tabBarIcon: ({ color, size, focused }) => {
                         return (
-                            <Ionicons name="ios-heart" size={size} color={focused ? '#8257E5' : color}/>
+                            <Ionicons name='ios-heart' size={size} color={focused ? '#8257E5' : color}/>
                         )
                     }
                 }} 

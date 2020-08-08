@@ -16,7 +16,7 @@ function GiveClasses() {
     return (
         <View style={styles.container}>
             <ImageBackground 
-                resizeMode="contain" 
+                resizeMode='contain' 
                 style={styles.content} source={giveClassesBgImage}
             >
                 <Text style={styles.title}>Quer ser um Proffy?</Text>

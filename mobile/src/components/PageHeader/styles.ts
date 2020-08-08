@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 
     topBar: {
         flexDirection: 'row',
-        alignItems: "center",
+        alignItems: 'center',
         justifyContent: 'space-between'
     },
 

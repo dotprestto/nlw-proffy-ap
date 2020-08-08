@@ -4,13 +4,13 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#8257E5',
         flex: 1,
-        justifyContent: "center",
+        justifyContent: 'center',
         padding: 40,
     },
 
     content: {
         flex: 1,
-        justifyContent: "center",
+        justifyContent: 'center',
     },
 
     title: {
@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
         marginVertical: 40,
         backgroundColor: '#04D361',
         height: 58,
-        alignItems: "center",
-        justifyContent: "center",
+        alignItems: 'center',
+        justifyContent: 'center',
         borderRadius: 8,
     },
 
